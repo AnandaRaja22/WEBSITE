@@ -6,44 +6,95 @@
     <title>R.M.K. ENGINEERING COLLEGE</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
         }
-        .header {
+        header {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 40px 20px;
+            border-bottom: 3px solid #4CAF50;
         }
-        .content {
+        h1, h2 {
+            margin: 0;
+        }
+        section {
             text-align: center;
-            padding: 20px;
+            padding: 50px;
+        }
+        .intro {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
         }
         .register-button {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px;
+            font-size: 18px;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
         }
         .register-button:hover {
             background-color: #45a049;
+        }
+        .event-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-top: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .event-description {
+            margin-top: 50px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #444;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
+    <header>
         <h1>R.M.K. ENGINEERING COLLEGE</h1>
         <h2>EEE DEPARTMENT</h2>
-    </div>
+    </header>
 
-    <div class="content">
-        <a href="https://forms.gle/uB5eaA44nNg34bGJA" class="register-button">Register</a>
+    <section>
+        <p class="intro">Welcome to the registration page for the upcoming event! Join us for an exciting experience.</p>
+        <a href="https://forms.gle/uB5eaA44nNg34bGJA" class="register-button">Register Now</a>
+        <img src="https://via.placeholder.com/800x400" alt="Event Image" class="event-image">
+        <div class="event-description">
+            <h3>About the Event</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus nisl eu metus dapibus, at luctus sem consequat. Suspendisse potenti. Nulla facilisi. Sed et eleifend ligula, at malesuada metus. Duis ac ligula vel elit vehicula tincidunt ac at sem. Ut efficitur sapien id neque malesuada, at rhoncus augue fringilla. Vestibulum bibendum libero vel eros tempus, nec malesuada tortor mattis.</p>
+            <!-- Add more details about the event -->
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2023 R.M.K. Engineering College - EEE Department</p>
     </div>
 
 </body>
